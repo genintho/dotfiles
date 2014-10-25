@@ -1,0 +1,55 @@
+#!/bin/sh
+
+soft=( 	
+	"Dropbox" 
+	"Evernote"
+	"Firefox"
+	"Gas Mask"
+	"Github"
+	"Google Chrome"
+	"Jumpcut"
+	"PHPStorm"
+	"Sonos"
+	"Spotify"
+	"Sublime Text"
+	"The Unarchiver"
+	"Vagrant Manager"
+	"VirtualBox"
+	"Viscosity"
+	"VLC"
+)
+
+for ((i=0;i<${#soft[@]};++i));
+do
+	if [ ! -d "/Applications/${soft[i]}.app" ]; then
+		echo "Install ${soft[i]}"
+		# lower case everythinf
+		appName=$(echo "${soft[i]}" | tr [:upper:] [:lower:])
+		# replace space by -
+		appName=${appName// /-}
+		brew cask install ${appName}
+		echo "Done."
+	else
+		echo "${soft[i]} was already installed"
+	fi
+done
+
+
+soft=( 	
+	"mvim"
+	"vagrant"
+)
+
+for ((i=0;i<${#soft[@]};++i));
+do	
+	if test ! $(which ${soft[i]}) then
+ 		echo "  Installing ${soft[i]} for you."
+	  	brew cask install ${soft[i]}
+	  	echo "${soft[i]} ... done"
+ 	else
+		echo "${soft[i]} was already installed"
+	fi
+	
+done
+
+

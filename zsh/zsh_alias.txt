@@ -1,0 +1,24 @@
+#command 
+alias bell="tput bel"
+
+### SHORTCUT
+alias project="cd ~/Dropbox/Project/"
+
+############################
+#	ACK
+############################
+alias ackjs="ack --js"
+alias ackphp="ack --php"
+
+############################
+# Connection
+############################
+alias moadib="ssh -A thomas@moadib.net -p 8888"
+alias onlineTimelapse="ssh -A ubuntu@107.22.211.131"
+
+function gg(){
+	grep -rns $1 .
+}
+
+
+alias postgres_start="postgres -D /usr/local/var/postgres"
