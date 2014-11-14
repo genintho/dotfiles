@@ -1,3 +1,5 @@
+alias gpom="git pull origin master"
+
 function git_delete_branch()
 {
     git push origin :$1
@@ -7,7 +9,7 @@ function git_delete_branch()
 function git_pull_request()
 {
     NAME=`git rev-parse --abbrev-ref HEAD`
-    push $NAME
+    ggpush
     open https://github.com/Expensify/Web-Expensify/compare/$NAME
 }
 
