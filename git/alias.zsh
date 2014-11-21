@@ -1,4 +1,5 @@
 alias gpom="git pull origin master"
+alias gcob="git checkout -b"
 
 function git_delete_branch()
 {
