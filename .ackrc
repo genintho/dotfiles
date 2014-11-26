@@ -1,0 +1,6 @@
+# Always sort file by default
+--sort-files
+
+# Ignore IDE internal directory
+--ignore-dir=.idea
+
