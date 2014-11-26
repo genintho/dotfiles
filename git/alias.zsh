@@ -15,4 +15,11 @@ function git_test_branch()
     git checkout $1
 }
 
-
+# Create a GitHub pull request to master from the current branch
+function git_pull_request()
+{
+    local NAME=`git rev-parse --abbrev-ref HEAD`
+    local PATH_REPO=`git remote show -n origin | grep Push | cut -d: -f2- | cut -d/ -f 1- | tr -d " "  | cut -d. -f-2`
+    ggpush
+    open $PATH_REPO/compare/$NAME
+}
