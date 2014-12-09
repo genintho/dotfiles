@@ -1,5 +1,6 @@
 alias gpom="git pull origin master"
 alias gcob="git checkout -b"
+alias gsl="git stash list"
 
 # Delete a branch localy and remotely
 function git_delete_branch()
@@ -20,6 +21,6 @@ function git_pull_request()
 {
     local NAME=`git rev-parse --abbrev-ref HEAD`
     local PATH_REPO=`git remote show -n origin | grep Push | cut -d: -f2- | cut -d/ -f 1- | tr -d " "  | cut -d. -f-2`
-    ggpush
+    git push origin $NAME
     open $PATH_REPO/compare/$NAME
 }
