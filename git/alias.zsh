@@ -1,6 +1,7 @@
 alias gpom="git pull origin master"
 alias gcob="git checkout -b"
 alias gsl="git stash list"
+alias gsp="git stash pop"
 
 # Delete a branch localy and remotely
 function git_delete_branch()
