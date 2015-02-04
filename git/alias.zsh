@@ -25,3 +25,9 @@ function git_pull_request()
     git push origin $NAME
     open $PATH_REPO/compare/$NAME
 }
+
+# Delete from local the branch that have been merged with the current branch
+function git_clean_merged_branch()
+{
+  git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
+}
