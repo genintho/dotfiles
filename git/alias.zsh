@@ -26,6 +26,18 @@ function git_pull_request()
     open $PATH_REPO/compare/$NAME
 }
 
+function ggpush()
+{
+   local NAME=`git rev-parse --abbrev-ref HEAD`
+   git push origin $NAME
+}
+
+function ggpull()
+{
+    local NAME=`git rev-parse --abbrev-ref HEAD`
+    git pull origin $NAME
+}
+
 # Delete from local the branch that have been merged with the current branch
 function git_clean_merged_branch()
 {

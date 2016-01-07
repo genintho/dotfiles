@@ -1,0 +1,68 @@
+set nocompatible 
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+Bundle 'tpope/vim-sensible'
+Bundle 'tpope/vim-surround'
+
+" Git Wrapper
+Bundle 'tpope/vim-fugitive'
+
+" Ack search in vim
+Plugin 'mileszs/ack.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'Shougo/vimproc'
+Bundle 'Shougo/unite.vim'
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'scrooloose/syntastic'
+Plugin 'bling/vim-airline'
+
+call vundle#end()
+filetype plugin indent on
+
+
+color jellybeans
+syntax on
+
+" highlight current line
+set cursorline
+
+" space for tab
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+set synmaxcol=120
+set number
+set relativenumber
+set nowrap
+
+" Search: case insensitive except if we use camlecase
+set hlsearch
+set ignorecase
+set smartcase
+
+"Syntastic recommended setting https://github.com/scrooloose/syntastic#settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
+" PHP auto completion extend
+" https://github.com/m2mdas/phpcomplete-extended
+"autocmd  FileType  php setlocal omnifunc=phpcomplete_extended#CompletePHP
+
+" Dispaly the status line all the time
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn|)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
