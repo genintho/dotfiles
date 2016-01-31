@@ -1,6 +1,3 @@
-#command 
-alias bell="tput bel"
-
 ### SHORTCUT
 alias project="cd ~/Dropbox/Project/"
 
@@ -10,11 +7,9 @@ alias project="cd ~/Dropbox/Project/"
 alias ackjs="ack --js"
 alias ackphp="ack --php"
 
-############################
-# Connection
-############################
-alias moadib="ssh -A thomas@moadib.net -p 8888"
-
+##
+# Grep
+##
 function gg(){
 	grep -rns $1 .
 }
