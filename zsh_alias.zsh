@@ -22,6 +22,6 @@ alias homestead_start="cd $HOMESTEAD_DIR;vagrant up;cd -;"
 alias homestead_stop="cd $HOMESTEAD_DIR;vagrant suspend;cd -;"
 alias homestead_ssh="cd $HOMESTEAD_DIR;vagrant ssh;"
 
-alias project_slimer="cd ~/Dropbox/Project/Golang/src/github.com/genintho/slimer"
+alias project_slimer="cd ~/Dropbox/Project/slimer"
 
 
