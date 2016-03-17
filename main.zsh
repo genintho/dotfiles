@@ -1,6 +1,8 @@
 # Need to move the theme in ~/.oh-my-zsh/themes/
 ZSH_THEME="xt6"
 
+plugins=(git Composer docker vagrant) 
+
 ## Work stuff
 for filename in ~/Dropbox/dotfiles/Hipmunk/*.zsh; do
   source $filename
