@@ -2,6 +2,7 @@ alias gpom="git pull origin master"
 alias gcob="git checkout -b"
 alias gsl="git stash list"
 alias gsp="git stash pop"
+alias grm="git rebase -i master"
 
 # Delete a branch localy and remotely
 function git_delete_branch()
@@ -30,6 +31,12 @@ function ggpush()
 {
    local NAME=`git rev-parse --abbrev-ref HEAD`
    git push origin $NAME
+}
+
+function ggpush_force()
+{
+   local NAME=`git rev-parse --abbrev-ref HEAD`
+   git push -f origin $NAME
 }
 
 function ggpull()
