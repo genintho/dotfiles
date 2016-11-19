@@ -1,0 +1,66 @@
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="Python 2.7.10 (/usr/bin/python)" />
+      <type value="Python SDK" />
+      <homePath value="/usr/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$USER_HOME$/Dev/hipmanage" />
+            <root type="simple" url="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/GitPython-1.0.1-py2.7.egg" />
+            <root type="simple" url="jar://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/python_consul-0.4.4-py2.7.egg!/" />
+            <root type="simple" url="jar://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/simplejson-2.1.1-py2.7-macosx-10.11-intel.egg!/" />
+            <root type="simple" url="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/Mako-0.7.2-py2.7.egg" />
+            <root type="simple" url="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/rundeckrun-0.1.11-py2.7.egg" />
+            <root type="simple" url="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/python_jenkins-0.4.12-py2.7.egg" />
+            <root type="simple" url="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/requests_futures-0.9.5-py2.7.egg" />
+            <root type="simple" url="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/nose-1.3.7-py2.7.egg" />
+            <root type="simple" url="jar://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/pycurl-7.43.0-py2.7-macosx-10.11-intel.egg!/" />
+            <root type="simple" url="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/Fabric-1.10.2-py2.7.egg" />
+            <root type="simple" url="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/gitdb-0.6.4-py2.7-macosx-10.11-intel.egg" />
+            <root type="simple" url="jar://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/multi_key_dict-2.0.3-py2.7.egg!/" />
+            <root type="simple" url="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/pbr-1.8.1-py2.7.egg" />
+            <root type="simple" url="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/futures-3.0.4-py2.7.egg" />
+            <root type="simple" url="jar://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/paramiko-1.16.0-py2.7.egg!/" />
+            <root type="simple" url="jar://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/smmap-0.9.0-py2.7.egg!/" />
+            <root type="simple" url="jar://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/ecdsa-0.13-py2.7.egg!/" />
+            <root type="simple" url="file:///Library/Python/2.7/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages/six-1.10.0-py2.7.egg" />
+            <root type="simple" url="file:///Library/Python/2.7/site-packages/pycharm-debug.egg" />
+            <root type="simple" url="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7" />
+            <root type="simple" url="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-darwin" />
+            <root type="simple" url="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac" />
+            <root type="simple" url="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/lib-scriptpackages" />
+            <root type="simple" url="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk" />
+            <root type="simple" url="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-dynload" />
+            <root type="simple" url="file://$USER_HOME$/Library/Python/2.7/lib/python/site-packages" />
+            <root type="simple" url="file:///usr/local/lib/python2.7/site-packages" />
+            <root type="simple" url="file:///System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python" />
+            <root type="simple" url="file:///System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/PyObjC" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm2016.2/python_stubs/348993582" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Remote  unknown interpreter Docker (pycharm/docker/compose:1.6.2)" />
+      <type value="Python SDK" />
+      <homePath value="docker://pycharm/docker/compose:1.6.2/python" />
+      <roots>
+        <classPath>
+          <root type="composite" />
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional DOCKER_ACCOUNT_NAME="HipmunkDocker" DOCKER_IMAGE_NAME="pycharm/docker/compose:1.6.2" DOCKER_REMOTE_PROJECT_PATH="/opt/project" INTERPRETER_PATH="python" HELPERS_PATH="/opt/.pycharm_helpers" INITIALIZED="false" VALID="true" SKELETONS_PATH="" VERSION="undefined" />
+    </jdk>
+  </component>
+</application>

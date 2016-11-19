@@ -1,0 +1,16 @@
+<application>
+  <component name="ScratchFileService">
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch" value="CoffeeScript" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.coffee" value="CoffeeScript" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.js" value="JavaScript" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py" value="Python" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1" value="CoffeeScript" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.coffee" value="CoffeeScript" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2" value="CoffeeScript" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.coffee" value="CoffeeScript" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3" value="CoffeeScript" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.coffee" value="CoffeeScript" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4" value="CoffeeScript" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4.coffee" value="CoffeeScript" />
+  </component>
+</application>
