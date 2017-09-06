@@ -25,3 +25,7 @@ alias homestead_ssh="cd $HOMESTEAD_DIR;vagrant ssh;"
 alias project_slimer="cd ~/Dropbox/Project/slimer"
 
 
+
+### Laravel
+alias art="php artisan"
+
