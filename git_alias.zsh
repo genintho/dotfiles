@@ -3,6 +3,7 @@ alias gcob="git checkout -b"
 alias gsl="git stash list"
 alias gsp="git stash pop"
 alias grm="git rebase -i master"
+alias heroku_deploy="git push heroku master"
 
 # Delete a branch localy and remotely
 function git_delete_branch()
