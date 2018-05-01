@@ -14,18 +14,7 @@ function gg(){
 	grep -rns $1 .
 }
 
-############################
-# Project
-############################
-HOMESTEAD_DIR=~/Dropbox/Project/Homestead
-alias homestead_start="cd $HOMESTEAD_DIR;vagrant up;cd -;"
-alias homestead_stop="cd $HOMESTEAD_DIR;vagrant suspend;cd -;"
-alias homestead_ssh="cd $HOMESTEAD_DIR;vagrant ssh;"
-
-alias project_slimer="cd ~/Dropbox/Project/slimer"
-
-
-
 ### Laravel
 alias art="php artisan"
+
 
