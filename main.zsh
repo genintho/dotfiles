@@ -25,11 +25,6 @@ for filename in ~/Dropbox/dotfiles/Hipmunk/*.zsh; do
 done
 
 
-## Golang
-alias GOPATH="~/Dropbox/Project/Golang/"
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$GOPATH/bin  
-
 ## Composer
 export PATH=$PATH:~/.composer/vendor/bin
 
