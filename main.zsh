@@ -1,7 +1,9 @@
 # Need to move the theme in ~/.oh-my-zsh/themes/
 ZSH_THEME="xt6"
 
-plugins=(git Composer docker) 
+plugins=(git Composer heroku docker)
+
+DOT_FILES_DIR=~/Dropbox/dotfiles
 
 # Draw an horizontal line between command
 setopt promptsubst
@@ -29,6 +31,6 @@ done
 export PATH=$PATH:~/.composer/vendor/bin
 
 ## Extra aliases
-source ~/Dropbox/dotfiles/git_alias.zsh
-source ~/Dropbox/dotfiles/zsh_alias.zsh
+source $DOT_FILES_DIR/alias/git.sh
+source $DOT_FILES_DIR/alias/zsh.sh
 

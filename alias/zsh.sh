@@ -1,5 +1,3 @@
-### SHORTCUT
-alias project="cd ~/Dropbox/Project/"
 
 ############################
 #	ACK
