@@ -1,0 +1,29 @@
+[user]
+	name = Thomas Genin
+	email = xt6.thomas.genin@gmail.com
+	signingkey = B3FDAD0AF5050A82
+[core]
+	excludesfile = /Users/xt-pro/.gitignore_global
+	editor = /usr/bin/vim
+[color]
+	ui = true
+[color "branch"]
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
+[commit]
+      gpgsign = true
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[github]
+	user = genintho
+[ghi]
+	token = !security find-internet-password -a genintho -s github.com -l 'ghi token' -w
