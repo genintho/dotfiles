@@ -31,6 +31,6 @@ done
 export PATH=$PATH:~/.composer/vendor/bin
 
 ## Extra aliases
-source $DOT_FILES_DIR/alias/git.sh
-source $DOT_FILES_DIR/alias/zsh.sh
-
+for f in $DOT_FILES_DIR/alias/*; do
+    source $f
+done
