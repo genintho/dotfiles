@@ -4,3 +4,8 @@
 # Ignore IDE internal directory
 --ignore-dir=.idea
 
+
+--ignore-dir=node_modules
+--ignore-dir=static/js
+--ignore-dir=static/v
+
