@@ -1,6 +1,10 @@
 set nocompatible 
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
+
+"Ton install vundle
+"" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" run :PluginInstall in Vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
@@ -49,6 +53,10 @@ set smartcase
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
+
+"Font
+set guifont=Monaco:h10 noanti
+
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
