@@ -51,3 +51,10 @@ function git_clean_merged_branch()
 {
   git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
 }
+
+function git_file_last_modified_date()
+{
+    git ls-tree -r --name-only HEAD | grep -v node_modules| while read filename; do
+        echo "$(git log -1 --format="%ai | %at | %h | %an | %ad |" -- $filename) $filename"
+    done
+}
