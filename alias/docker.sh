@@ -1,3 +1,5 @@
+alias dcu="docker-compose up"
+alias dcs="docker-compose stop"
 alias docker_stop_all="docker ps | awk '{print $1}'| grep -v CONTAINER | xargs docker stop"
 alias docker_delete_all_image="docker rmi $(docker images -q)"
 function docker_clean()
