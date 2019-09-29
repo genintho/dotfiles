@@ -1,7 +1,11 @@
 # Need to move the theme in ~/.oh-my-zsh/themes/
 ZSH_THEME="xt6"
 
-plugins=(git Composer heroku docker)
+plugins=(
+    git
+    docker
+    docker-compose
+)
 
 DOT_FILES_DIR=~/Dropbox/dotfiles
 
