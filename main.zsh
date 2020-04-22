@@ -26,10 +26,9 @@ function git_prompt_info() {
 
 
 ## Work stuff
-for filename in ~/Dropbox/dotfiles/Hipmunk/*.zsh; do
+for filename in ~/Dropbox/dotfiles/Fieldwire/*.zsh; do
   source $filename
 done
-
 
 ## Composer
 export PATH=$PATH:~/.composer/vendor/bin
