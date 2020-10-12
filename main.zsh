@@ -37,3 +37,34 @@ export PATH=$PATH:~/.composer/vendor/bin
 for f in $DOT_FILES_DIR/alias/*; do
     source $f
 done
+
+
+# Lazy load NVM / Node / NPM when the command are invokaed
+# https://medium.com/@dannysmith/little-thing-2-speeding-up-zsh-f1860390f92
+# http://broken-by.me/lazy-load-nvm/
+nvm() {
+    unset -f nvm
+    export NVM_DIR=~/.nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+    nvm "$@"
+}
+ 
+node() {
+    unset -f node
+    export NVM_DIR=~/.nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+    node "$@"
+}
+ 
+npm() {
+    unset -f npm
+    export NVM_DIR=~/.nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+    npm "$@"
+}
+
+
