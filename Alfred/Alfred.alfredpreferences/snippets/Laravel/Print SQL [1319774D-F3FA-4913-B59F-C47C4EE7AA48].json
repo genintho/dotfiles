@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : " \\DB::listen(function ($sql) {\n\techo($sql->sql) . PHP_EOL;\n});",
+    "uid" : "1319774D-F3FA-4913-B59F-C47C4EE7AA48",
+    "name" : "Print SQL",
+    "keyword" : ""
+  }
+}

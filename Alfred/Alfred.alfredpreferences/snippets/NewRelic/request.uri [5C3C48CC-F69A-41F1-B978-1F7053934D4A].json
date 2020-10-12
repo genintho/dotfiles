@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "SELECT count(*) from Transaction where request.uri like '%%' FACET request.uri",
+    "uid" : "5C3C48CC-F69A-41F1-B978-1F7053934D4A",
+    "name" : "request.uri",
+    "keyword" : ""
+  }
+}
