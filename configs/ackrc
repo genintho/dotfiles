@@ -8,4 +8,4 @@
 --ignore-dir=node_modules
 --ignore-dir=static/js
 --ignore-dir=static/v
-
+--ignore-dir=dist

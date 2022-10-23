@@ -1,7 +1,7 @@
 [user]
 	name = Thomas Genin
 	email = xt6.thomas.genin@gmail.com
-	signingkey = B3FDAD0AF5050A82
+	signingkey = B52533432E824EBD
 [core]
 	excludesfile = /Users/xt-pro/.gitignore_global
 	editor = /usr/bin/vim
@@ -12,7 +12,7 @@
     local = green bold
     remote = cyan bold
 [commit]
-      gpgsign = false
+	gpgsign = false
 [filter "media"]
 	required = true
 	clean = git media clean %f
@@ -27,3 +27,5 @@
 	user = genintho
 [pager]
 	branch = false
+[pull]
+	ff = only

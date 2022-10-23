@@ -5,6 +5,7 @@ alias gsp="git stash pop"
 alias grm="git rebase -i master"
 alias gst="git status"
 alias ga="git add -up"
+alias gcmsg="git commit -m"
 
 # Delete a branch localy and remotely
 function git_delete_branch -d "Delete the local and remote branch"

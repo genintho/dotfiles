@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "select k, percentile_disc(k) within group (order by things.cc)\nfrom (\nSELECT res.cc\nFROM(\n  select t.project_id, count(t.project_id) as cc\n  from tasks t \n  -- WHERE t.verified_at IS NULL\n  group by t.project_id\n  ORDER BY cc DESC\n) res\nJOIN projects p on p.id = res.project_id\nWHERE  p.is_tasks_enabled = true\n-- AND p.archived_at IS NULL\nAND p.deleted_at IS NULL\n-- AND \nAND p.updated_at > current_date - interval '1 month' \n-- AND p.is_analytics_enabled = true\n-- AND res.cc > 400\n) things, generate_series(0.01, 1, 0.01) as k\ngroup by k\n",
+    "uid" : "63CECE3E-D181-4038-BAD6-5A12129D7229",
+    "name" : "Query grouping by percentile",
+    "keyword" : ""
+  }
+}
