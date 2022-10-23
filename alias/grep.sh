@@ -1,4 +1,4 @@
-function gg(){
-	grep -rns $1 .
-}
+#function gg(){
+#	grep -rns $1 .
+#}
 

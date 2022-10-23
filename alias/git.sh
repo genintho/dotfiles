@@ -3,58 +3,36 @@ alias gcob="git checkout -b"
 alias gsl="git stash list"
 alias gsp="git stash pop"
 alias grm="git rebase -i master"
-alias gad="git add -up"
+alias gst="git status"
+alias ga="git add -up"
 
 # Delete a branch localy and remotely
-function git_delete_branch()
-{
+function git_delete_branch -d "Delete the local and remote branch"
     git push origin :$1
     git branch -D $1
-}
+end
 
-# Fetch and checkout one branch. Useful to test something before merging
-function git_test_branch()
-{
-    git fetch origin $1:$1
-    git checkout $1
-}
-
-# Create a GitHub pull request to master from the current branch
-function git_pull_request()
-{
-    local NAME=`git rev-parse --abbrev-ref HEAD`
-    local PATH_REPO=`git remote show -n origin | grep Push | cut -d: -f2- | cut -d/ -f 1- | tr -d " "  | cut -d. -f-2`
-    git push origin $NAME
-    open $PATH_REPO/compare/$NAME
-}
-
-function ggpush()
-{
+function ggpush
    local NAME=`git rev-parse --abbrev-ref HEAD`
    git push origin $NAME
-}
+end
 
-function ggpush_force()
-{
+function ggpush_force
    local NAME=`git rev-parse --abbrev-ref HEAD`
    git push -f origin $NAME
-}
+end
 
-function ggpull()
-{
+function ggpull
     local NAME=`git rev-parse --abbrev-ref HEAD`
     git pull origin $NAME
-}
+end
 
-# Delete from local the branch that have been merged with the current branch
-function git_clean_merged_branch()
-{
+function git_clean_merged_branch -d "Delete from local the branch that have been merged with the current branch"
   git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
-}
+end
 
-function git_file_last_modified_date()
-{
-    git ls-tree -r --name-only HEAD | grep -v node_modules| while read filename; do
+function git_file_last_modified_date
+    git ls-tree -r --name-only HEAD | grep -v node_modules| while read filename
         echo "$(git log -1 --format="%ai | %at | %h | %an | %ad |" -- $filename) $filename"
-    done
-}
+    end
+end
