@@ -2,7 +2,7 @@
   "alfredsnippet" : {
     "snippet" : "Installation and running instructions are present and work\nSensible usage of dependencies\nCode is well organized and consistent\nCode is well commented\nCode contains tests\nAll code written is used\nCode handles AJAX errors\nCode runs\nCode solves the problem\nUI is good\nUX is good\nOptional:\n\nInfinite scrolling\nInstant search\nFluid grid",
     "uid" : "ABE771AC-834D-4DFB-82ED-B47C5D5232C6",
-    "name" : "Frontend rubrik",
+    "name" : "Challenge - Frontend rubrik",
     "keyword" : ""
   }
 }
