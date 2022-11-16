@@ -3,8 +3,6 @@ ZSH_THEME="xt6"
 
 plugins=(
     git
-    docker
-    docker-compose
 )
 
 DOT_FILES_DIR=~/Dropbox/dotfiles

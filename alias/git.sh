@@ -1,5 +1,6 @@
 alias gd="git diff"
 alias gpom="git pull origin master"
+alias gco="git checkout"
 alias gcob="git checkout -b"
 alias gsl="git stash list"
 alias gsp="git stash pop"
@@ -12,6 +13,12 @@ alias gst="git status"
 function git_delete_branch -d "Delete the local and remote branch"
     git push origin :$1
     git branch -D $1
+end
+
+
+function gcm
+    set NAME (git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
+    git checkout $NAME
 end
 
 function ggpush
