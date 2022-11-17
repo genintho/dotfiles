@@ -23,7 +23,7 @@ function gcm
 end
 
 function ggpush
-   local NAME=`git rev-parse --abbrev-ref HEAD`
+    set NAME (git rev-parse --abbrev-ref HEAD)
    git push origin $NAME
 end
 
