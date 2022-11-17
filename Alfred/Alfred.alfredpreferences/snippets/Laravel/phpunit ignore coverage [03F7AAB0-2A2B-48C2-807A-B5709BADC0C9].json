@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "\/** @codeCoverageIgnore *\/",
+    "uid" : "03F7AAB0-2A2B-48C2-807A-B5709BADC0C9",
+    "name" : "phpunit ignore coverage",
+    "keyword" : ""
+  }
+}
