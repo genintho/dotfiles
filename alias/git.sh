@@ -8,6 +8,7 @@ alias grm="git rebase -i master"
 alias ga="git add -up"
 alias gcmsg="git commit -m"
 alias gst="git status"
+alias grhh="git reset --hard HEAD"
 
 # Delete a branch localy and remotely
 function git_delete_branch -d "Delete the local and remote branch"
