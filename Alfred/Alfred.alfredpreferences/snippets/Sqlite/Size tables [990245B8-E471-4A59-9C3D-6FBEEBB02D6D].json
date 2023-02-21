@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "SELECT SUM(\"pgsize\") as size,name FROM \"dbstat\"  group by name order by size;",
+    "uid" : "990245B8-E471-4A59-9C3D-6FBEEBB02D6D",
+    "name" : "Size tables",
+    "keyword" : ""
+  }
+}
